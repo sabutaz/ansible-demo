@@ -13,7 +13,7 @@ ansible-playbook vars.yml --tags=tag1
 ansible-playbook demo.yml
 
 # Roles and Tasks
-ansible-playbook roles.yml
+ansible-playbook common.yml
 
 # Templates.
 ansible-playbook template.yml

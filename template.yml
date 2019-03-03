@@ -1,6 +1,6 @@
 ---
 - hosts: servers
-
+  serial: 1
   tasks:
 
   - name: Template a file to another place
