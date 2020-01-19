@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
-  config.vm.network "private_network", ip: "192.168.99.100"
+  config.vm.network "private_network", ip: "192.168.95.5"
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "ubuntu/bionic64"
@@ -65,7 +65,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get install -y docker.io
-		systemctl enable docker
+    systemctl enable docker
     systemctl start docker
   SHELL
 end
